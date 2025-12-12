@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- metadata -->
+        <title>wowie its floppy</title>
+        <meta name="description" content="this is stupid lmao">
+        <link rel="funny" href="yabadabadoo"> 
+        <meta name="theme-color" content="#5c13a0"> 
+		
+        <!-- styles -->
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+	
+    <body>
+	
+	  <div id="splash" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 9999; transition: opacity 0.8s ease;">
+    <div style="text-align: center; color: #fff; font-family: 'Courier New', monospace;">
+      <h1 style="font-size: 3em; margin-bottom: 0.5em;">pls click</h1>
+    </div>
+  </div>
+	
+		
+<audio id="bgMusic" loop>
+  <source src="timberlake.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const audio = document.getElementById('bgMusic');
+  console.log('tuff audio playing:', audio);
+  audio.volume = 0.3;
+  
+  document.addEventListener('click', function() {
+    console.log('diddyblud clicked');
+    audio.play()
+      .then(() => console.log('this works tuff boyyyyy'))
+      .catch(error => console.log('diddyblud errored with this: ', error));
+  }, { once: true });
+</script>
+		<img src="revolver.gif" style="position: fixed; top: 20px; right: 20px; width: 150px; z-index: 1000;">
+		<img src="dance.gif" style="position: fixed; top: 20px; left: 20px; width: 150px; z-index: 1000;">
+
+		<main>
+            <header>
+                <h1><a href="https://cdn.discordapp.com/attachments/1307492474989707274/1391556818228219956/animatedcat.gif?ex=6932bd87&is=69316c07&hm=25f2ac6db33b0c6da192424444ecf6f67f883bbeabc5d1dec8d64b8cb3638319&" target="_blank">it's me</a></h1>
+            </header>
+
+            <h2>about</h2>
+            <p>hi, the name's FloppyDisk but you can also call me floppy. huge rhythm game fanatic btw
+            <br><br>i like to do a slight bit of drawing sometimes and have some huge ideas which i dont know what to do with them</p>
+
+            <h2>more about me</h2>
+            <p>i talk like, way too much sometimes if its a topic im interested in, so like, tell me if you want me to stop talking about a certain something.
+            <br><br>i dualboot arch linux and windows for some stupid silly reason
+            <br>(and i also hate myself, but shhhh)
+            <p>i like cheating in games, and also forsaken because im evil like that.
+			
+			<div style="background: #1a1a2e; padding: 20px; border-left: 4px solid #6f04f9; margin: 20px 0;">
+  <h2 style="margin-top: 0; color: #fff;">contact me</h2>
+  <a href="https://osu.ppy.sh/users/38385568" target="_blank" style="display: block; color: #e1a2f9; text-decoration: none; margin: 8px 0; font-family: 'Courier New', monospace;">my Osu! account if you want</a>
+  <a href="https://steamcommunity.com/id/128MBFloppyDisk/" target="_blank" style="display: block; color: #e1a2f9; text-decoration: none; margin: 8px 0; font-family: 'Courier New', monospace;">steam profile lol</a>
+  <a href="https://www.roblox.com/users/3611643696/profile" target="_blank" style="display: block; color: #e1a2f9; text-decoration: none; margin: 8px 0; font-family: 'Courier New', monospace;">my roblox profile</a>
+  <a href="mailto:diskette@estrogen.best" target="_blank" style="display: block; color: #e1a2f9; text-decoration: none; margin: 8px 0; font-family: 'Courier New', monospace;">email me something</a>
+</div>
+			
+						<div style="max-width: 800px; margin: 20px auto; padding: 0 20px;">
+  <video controls muted autoplay loop style="width: 800px; max-width: 100%; border-radius: 4px;">
+    <source src="forsakengameplay.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+            <footer style="font-size: 0.9em;">
+                <p>professional google docs user (trust)
+            </footer>
+            <footer style="font-size: 0.5em;">
+                <p>i am not related in any way to molly.shh
+            </footer>
+        </main>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const splash = document.getElementById('splash');
+  const videos = document.querySelectorAll('video');
+  const audio = document.querySelector('audio');
+  
+  videos.forEach(video => video.pause());
+  if (audio) audio.pause();
+  
+  splash.addEventListener('click', function() {
+    splash.style.opacity = '0';
+    setTimeout(() => {
+      splash.style.display = 'none';
+
+      videos.forEach(video => video.play());
+      if (audio) audio.play();
+    }, 800);
+  });
+});
+</script>
+<script src="dom-protect-me.js"></script>
+</body>
+</html>
